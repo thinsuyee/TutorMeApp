@@ -74,7 +74,7 @@ pipeline {
 	            steps {
 	                echo 'Testing the workflow...'
 					UiPathTest (
-					  testTarget: [$class: 'TestSetEntry', testSet: "TutorMeApp_Tests"],
+					  testTarget: [$class: 'TestSetEntry', testSet: "Demo_Tests"],
 					  orchestratorAddress: "${UIPATH_ORCH_URL}",
 					  orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
 					  folderName: "${UIPATH_ORCH_FOLDER_NAME}",
