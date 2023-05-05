@@ -68,7 +68,11 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Demo_TestCase" sap:VirtualizedContainerService.HintSize="618,616.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="resultSubject" />
+      <Variable x:TypeArguments="x:String" Name="resultSubject">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Biology</Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
